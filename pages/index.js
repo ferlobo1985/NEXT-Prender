@@ -1,4 +1,5 @@
 import axios from 'axios'
+import Link from 'next/link'
 
 const Home = (props) => {
 
@@ -11,6 +12,12 @@ const Home = (props) => {
           <li key={item.id}>{item.name}</li>
         ))}
       </ul>
+      <hr/>
+      <div>
+          <Link href="/users/1">User one</Link><br/>
+          <Link href="/users/2">User two</Link><br/>
+          <Link href="/users/3">User three</Link><br/>
+      </div>
 
     </>
   )
