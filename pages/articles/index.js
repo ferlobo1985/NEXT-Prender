@@ -42,9 +42,6 @@ export const getStaticProps = async() => {
             articles:request.data
         }
     }
-
 }
-
-
 
 export default articlesPage
